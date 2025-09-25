@@ -1,49 +1,56 @@
+# Compiled class files
 *.class
 
-# Gradle
+# =========================
+# Gradle & Maven
 .gradle
+target/
+backend/target/
+frontend/target/
 
-# Package Files #
+# Package Files
 *.jar
 *.war
 *.ear
 
-# Eclipse #
-.settings
+# Eclipse
+.settings/
 .project
 .classpath
-.studio
-target
+.studio/
 
-# Apple # 
-.DS_Store
-
-# Intellij #
-.idea
+# IntelliJ IDEA
+.idea/
 *.iml
 *.log
 
 # VSCode
-.vscode
+.vscode/
 
-# logback
+# MacOS
+.DS_Store
+
+# Logs
+*.log
 logback.out.xml
-
-backend/src/main/resources/public/
-backend/target
-frontend/dist/
-frontend/node/
-frontend/coverage/
-frontend/node_modules/
-frontend/npm-debug.log
-frontend/target
-frontend/test-output
-frontend/tests/e2e/reports
-frontend/tests/unit/coverage
-frontend/yarn-error.log
-frontend/yarn.lock
-
-security/target/
 selenium-debug.log
 
+# =========================
+# Frontend (Vue.js / Node)
+frontend/node_modules/
+frontend/dist/
+frontend/coverage/
+frontend/npm-debug.log
+frontend/tests/e2e/reports/
+frontend/tests/unit/coverage/
+
+# Optional: ignore lock files if you don’t want them in repo
+# frontend/package-lock.json
+# frontend/yarn.lock
+
+# =========================
+# Spring Boot resources (where frontend gets copied into)
+backend/src/main/resources/public/
+
+# Maven wrapper
 !.mvn/wrapper/maven-wrapper.jar
