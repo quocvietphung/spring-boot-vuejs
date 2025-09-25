@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: teammeter-app
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/teammeterdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # tạo & cập nhật schema tự động
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
+
+security:
+  user:
+    name: sina
+    password: miller
+
+server:
+  port: 8098
